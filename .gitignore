@@ -1,0 +1,7 @@
+target/
+.idea/
+*.iml
+src/main/webapp/css/
+src/main/webapp/js/
+src/main/webapp/views/
+src/test/
