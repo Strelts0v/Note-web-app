@@ -8,27 +8,27 @@ import java.util.List;
 public class User {
 
     private int userId;
-    private String email;
+    private String login;
 
-    public User(int userId, String email){
+    public User(int userId, String login){
         this.userId = userId;
-        this.email = email;
+        this.login = login;
     }
 
     public int getUserId() {
         return userId;
     }
 
-    public String getEmail() {
-        return email;
+    public String getLogin() {
+        return login;
     }
 
     public void setUserId(int userId) {
         this.userId = userId;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public List<Note> getAllNotes(){
