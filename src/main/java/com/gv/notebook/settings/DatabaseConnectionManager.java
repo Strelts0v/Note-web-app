@@ -11,6 +11,8 @@ public class DatabaseConnectionManager {
     private static final String DATABASE_USER = "database.user";
     private static final String DATABASE_PASSWORD = "database.password";
 
+    private DatabaseConnectionManager(){}
+
     public static Connection getDatabaseConnection(){
         String dbUrl = ConfigurationManager.getProperty(DATABASE_URL);
         String dbName = ConfigurationManager.getProperty(DATABASE_NAME);
