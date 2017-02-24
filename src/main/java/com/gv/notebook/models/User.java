@@ -1,8 +1,5 @@
 package com.gv.notebook.models;
 
-import com.gv.notebook.dao.NoteDao;
-import com.gv.notebook.dao.NoteDaoSimple;
-
 import java.util.List;
 
 public class User {
@@ -23,16 +20,4 @@ public class User {
         return login;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public List<Note> getAllNotes(){
-        NoteDao noteDao = new NoteDaoSimple();
-        return noteDao.getAllUserNotes(userId);
-    }
 }
